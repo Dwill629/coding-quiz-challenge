@@ -68,3 +68,17 @@ var questionList = [
     viewScoresDiv.style.visibility = "visible";
     timerDiv.style.visibility = "hidden";
   }
+
+  /* Updates each question and answer text to the index question specified */
+  function updateQuestion(qIdx) {
+    var questionText = document.getElementById("question-text");
+  
+    if (qIdx < questionList.length) {
+      questionText.textContent = questionList[qIdx].question;
+      
+      for(var i = 0; i < 4; i++) {
+        var answerText = document.getElementById("answer-btn-" + (i+1));
+        answerText.textContent = (i+1) + ". " + questionList[qIdx].answers[i];
+      }
+    }
+  }
