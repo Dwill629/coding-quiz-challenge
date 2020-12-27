@@ -196,6 +196,10 @@ var questionList = [
     showScores();
   })
 
+  /* Add listener to 'Return' button to reinitialize to start condition */
+  returnBtn.addEventListener("click", initializePage);
+  
+
 
   
 
