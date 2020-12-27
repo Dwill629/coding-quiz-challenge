@@ -227,6 +227,16 @@ var questionList = [
       showScores();
     }
   })
+
+  /* Add listener to 'Clear Scores" button to delete score storage and reload score page */
+  clearScoresBtn.addEventListener("click", function(event) {
+    event.target.blur();
+    localStorage.removeItem("highScores");
+    showScores();
+  })
+  
+  /* Initialization */
+  loadScores();
   
 
 
