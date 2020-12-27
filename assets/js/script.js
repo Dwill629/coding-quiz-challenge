@@ -95,3 +95,19 @@ var questionList = [
     showID("complete-page");
   }
 
+  /* Update timer and quiz will end if the timer has expired */
+  function updateTimer(adjust) {
+    currentTime = currentTime + adjust > 0 ? currentTime + adjust : 0;
+    timeCounter.textContent = currentTime;
+  
+    if (currentTime === 0) {
+      finishQuiz();
+    }
+  }
+
+  /* Loads the high score from your local storage */
+  function loadScores() {
+    scoreList = JSON.parse(localStorage.getItem("highScores")) || [];
+  }
+  
+
