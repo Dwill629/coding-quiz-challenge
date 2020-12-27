@@ -109,5 +109,27 @@ var questionList = [
   function loadScores() {
     scoreList = JSON.parse(localStorage.getItem("highScores")) || [];
   }
+
+  /* Shows high score page */
+  function showScores() {
+    loadScores();
+
+    /* Update score table with new data */
+    scoreTableBody.innerHTML = "";
+    for(var i = 0; i < scoreList.length; i++) {
+      var tableRow = document.createElement("tr");
+      var initialsData = document.createElement("td");
+      var scoreData = document.createElement("td");
+  
+      initialsData.textContent = scoreList[i].initials;
+      scoreData.textContent = scoreList[i].score;
+  
+      tableRow.append(initialsData);
+      tableRow.append(scoreData);
+  
+      scoreTableBody.append(tableRow);
+    }
+    showID("high-score-page");
+  }
   
 
