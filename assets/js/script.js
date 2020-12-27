@@ -50,3 +50,12 @@ var questionList = [
   var timerInterval;
   var resultTimeout;
   var scoreList;
+
+  /* Hides a component by ID by setting its display to 'none' */
+  function hideID(id) {
+    var element = document.getElementById(id);
+  
+    element.style.display = "none";
+  }
+
+  
