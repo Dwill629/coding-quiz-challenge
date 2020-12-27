@@ -82,3 +82,16 @@ var questionList = [
       }
     }
   }
+
+   /* Finishes the quiz by transitioning page to the final score screen */
+   function finishQuiz() {
+    var scoreDisplay = document.getElementById("final-score");
+    clearInterval(timerInterval);
+  
+    hideID("question-page");
+    timerDiv.style.visibility = "hidden";
+    scoreDisplay.textContent = currentTime;
+    initialInput.value = "";
+    showID("complete-page");
+  }
+
