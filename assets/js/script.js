@@ -1,4 +1,4 @@
-// list of all questions, choices, and answers
+// list of all questions, choices, and answers//
 var questionList = [
     {
       question: "Commonly used data types DO NOT include:",
@@ -27,3 +27,26 @@ var questionList = [
       correctAnswer: 4
     }
   ];
+
+//list of variables neeeded for each ID//
+  var viewScoresDiv = document.getElementById("view-high-scores");
+  var resultDiv = document.getElementById("result-block");
+  var resultText = document.getElementById("result-text");
+  var timerDiv = document.getElementById("timer-div");
+  var timeCounter = document.getElementById("timer");
+  var scoreTableBody = document.getElementById("score-table-body");
+  
+  var startBtn = document.getElementById("start-btn");
+  var answerBtnDiv = document.getElementById("answer-btns");
+  var returnBtn = document.getElementById("return-btn");
+  var submitScoreBtn = document.getElementById("submit-score-btn");
+  var clearScoresBtn = document.getElementById("clear-score-btn");
+  
+  var submitScoreForm = document.getElementById("submit-score-form");
+  var initialInput = document.getElementById("init-enter");
+  
+  var currentQuestion;
+  var currentTime;
+  var timerInterval;
+  var resultTimeout;
+  var scoreList;
