@@ -131,5 +131,31 @@ var questionList = [
     }
     showID("high-score-page");
   }
+
+  /* Add listener to start the quiz when the start button has been clicked */
+  startBtn.addEventListener("click", function() {
+    /* Hide 'View High Scores' */
+    viewScoresDiv.style.visibility = "hidden";
+  
+    /* Show Timer */
+    timerDiv.style.visibility = "visible";
+  
+    /* Hide start page */
+    hideID("start-page");
+  
+    /* Load first question */
+    currentQuestion = 0;
+    updateQuestion(0);
+  
+    /* Show question page */
+    showID("question-page");
+  
+    /* Start timer countdown */
+    currentTime = 75;
+    timeCounter.textContent = currentTime;
+    timerInterval = setInterval(function() {
+      updateTimer(-1);
+    }, 1000);
+  });
   
 
