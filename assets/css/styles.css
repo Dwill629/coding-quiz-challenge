@@ -7,7 +7,7 @@ p {
   font-weight: 600;
 }
 
-/* Modified styling for all buttons */
+/* Modified the styling for all of the buttons */
 .quiz-btn {
   background-color:#550055;
   color: white;
@@ -17,13 +17,13 @@ p {
   color: white;
 }
 
-/* Initials entry box */
+/* entry box for your initials */
 #init-enter {
   font-size: 1.1rem;
   height: 2.1rem;
 }
 
-/* Text showing "correct" or "wrong" */
+/* Text showing whether you are "correct" or "wrong" */
 #result-text {
   font-style: italic;
 }
@@ -35,7 +35,7 @@ p {
   cursor:pointer;
 }
 
-/* Only change button background color on hover if hover is enabled (i.e. not mobile) */
+/* This only changes the button background color on hover if hover is enabled (does not work on mobile) */
 @media (hover: hover) {
   .quiz-btn:hover {
     background-color: purple;
