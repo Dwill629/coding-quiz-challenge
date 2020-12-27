@@ -188,5 +188,14 @@ var questionList = [
       }
     }
   });
+
+  /* Add listener to View High Scores div and move to the high score page */
+  viewScoresDiv.addEventListener("click", function() {
+    hideID("start-page");
+    viewScoresDiv.style.visibility = "hidden";
+    showScores();
+  })
+
+
   
 
