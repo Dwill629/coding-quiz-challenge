@@ -12,7 +12,7 @@ var questionList = [
     },
     {
       question: "Arrays in JavaScript can be used to store ____.",
-      answers: [ "numbers and strings", "other arrays", "booleans", "all of the above"
+      answers: ["numbers and strings", "other arrays", "booleans", "all of the above"
       ],
       correctAnswer: 4
     },
@@ -56,6 +56,13 @@ var questionList = [
     var element = document.getElementById(id);
   
     element.style.display = "none";
+  }
+
+  /* Removes a component by ID by setting its display to empty string */
+  function showID(id) {
+    var element = document.getElementById(id);
+  
+    element.style.display = "";
   }
 
   /* Set quiz initial start page state  */
