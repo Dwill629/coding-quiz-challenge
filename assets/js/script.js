@@ -58,4 +58,13 @@ var questionList = [
     element.style.display = "none";
   }
 
-  
+  /* Set quiz initial start page state  */
+  function initializePage() {
+    showID("start-page");
+    hideID("question-page");
+    hideID("result-block");
+    hideID("complete-page");
+    hideID("high-score-page");
+    viewScoresDiv.style.visibility = "visible";
+    timerDiv.style.visibility = "hidden";
+  }
