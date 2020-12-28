@@ -51,6 +51,10 @@ var questionList = [
   var resultTimeout;
   var scoreList;
 
+  // sound effects
+  var sfxRight = new Audio("assets/sfx/correct.wav");
+  var sfxWrong = new Audio("assets/sfx/incorrect.wav");
+
   /* Hides a component by ID by setting its display to 'none' */
   function hideID(id) {
     var element = document.getElementById(id);
