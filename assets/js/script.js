@@ -175,9 +175,11 @@ var questionList = [
       /* Check if answer is correct */
       if (event.target.id === "answer-btn-" + questionList[currentQuestion].correctAnswer ) {
         resultText.textContent = "Correct!";
+        sfxRight.play();
       } else {
         updateTimer(-10);
         resultText.textContent = "Wrong!";
+        sfxWrong.play();
       }
       showID("result-block");
   
