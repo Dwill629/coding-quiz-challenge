@@ -9,7 +9,7 @@ p {
 
 /* Modified the styling for all of the buttons */
 .quiz-btn {
-  background-color:#550055;
+  background-color:#43658b;
   color: white;
 }
 
@@ -31,13 +31,13 @@ p {
 /* View High Scores div, acting as psuedo-link */
 #view-high-scores {
   font-weight: bold;
-  color:#550055;
+  color:#43658b;
   cursor:pointer;
 }
 
 /* This only changes the button background color on hover if hover is enabled (does not work on mobile) */
 @media (hover: hover) {
   .quiz-btn:hover {
-    background-color: purple;
+    background-color: #4e89ae;
   }
 }
